@@ -25,6 +25,13 @@ echo 'export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"' >> ~/.zshrc
   && source ~/.zshrc
 {% endhighlight %}
 
+pipx - Install and Run Python Applications in Isolated Environments:
+{% highlight bash %}
+brew install pipx
+pipx ensurepath
+sudo pipx ensurepath --global
+{% endhighlight %}
+
 Change to your workspace directory 
  OR use this code to create a development folder in your home directory:
 {% highlight bash %}

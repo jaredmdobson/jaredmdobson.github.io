@@ -4,7 +4,11 @@
 <head>
     {%- include head.html -%}
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/kimbie-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
 
+    
 </head>
 
 {%- if site.plainwhite.condensed_mobile contains page.layout -%}
@@ -194,6 +198,7 @@
     <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
     {% endif %}
     <script src="/assets/js/post.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>
