@@ -26,7 +26,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jaredmdobson.com"
 github_username:  jaredmdobson
 # Build settings
-theme: plainwhite
+remote_theme: samarsault/plainwhite-jekyll
+permalink: /blog/:year/:month/:day/:title:output_ext
 plugins:
   - jekyll-feed
 plainwhite:
