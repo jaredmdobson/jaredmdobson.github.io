@@ -34,7 +34,7 @@ plainwhite:
   name: Jared Dobson
   tagline: Software Architect and Package Explorer
   date_format: "%b %-d, %Y"
-
+  disqus_shortname: jaredmdobson
   social_links:
     twitter: jaredmdobson
     github: jaredmdobson

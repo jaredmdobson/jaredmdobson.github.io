@@ -11,3 +11,7 @@ pre.highlight>button:active,
 pre.highlight>button:focus {
     opacity: 1;
 }
+
+.post {
+    font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}

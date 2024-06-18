@@ -6,32 +6,55 @@ categories: mojo python data-science ai
 ---
 Running numpy in Mojo is 20,000x faster on macbook!  That is incredible!  Let's get this going on our machine!
 
+Open your terminal app and Install homebrew (if it isn't already installed):
 {% highlight bash %}
 /bin/bash -c "$(curl -fsSL <https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh>)"
 {% endhighlight %}
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Then install python version 3.11 (currently the highest supported version by Mojo)
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-
-# => prints 'Hi, Tom' to STDOUT
-
+{% highlight bash %}
+brew install python@3.11
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Then add the python executables to your path:
+{% highlight bash %}
+echo 'export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"' >> ~/.zshrc \
+  && source ~/.zshrc
+{% endhighlight %}
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Change to your workspace directory 
+ OR use this code to create a development folder in your home directory:
+{% highlight bash %}
+mkdir ~/Development && cd ~/Development
+{% endhighlight %}
+
+Ensure that you get something like "Python 3.11.9" when you run:
+{% highlight bash %}
+python3 --version
+{% endhighlight %}
+
+It may have a different Patch Level 3.11.x, like 3.11.10 as long as it is 3.11 or the latest supported version by mojo.
+
+Install Mojo 
+{% highlight bash %}
+curl -s https://get.modular.com | sh -
+{% endhighlight %}
+
+Activate a python venv for mojo
+{% highlight bash %}
+python3 -m venv mojo-venv && source mojo-venv/bin/activate
+{% endhighlight %}
+
+Then install mojo via the modular package manager:
+{% highlight bash %}
+modular install mojo
+{% endhighlight %}
+
+And add required modular and mojo to your path:
+{% highlight bash %}
+MOJO_PATH=$(modular config mojo.path) \
+  && echo 'export MODULAR_HOME="'$HOME'/.modular"' >> ~/.zshrc \
+  && echo 'export PATH="'$MOJO_PATH'/bin:$PATH"' >> ~/.zshrc \
+  && source ~/.zshrc  
+{% endhighlight %}
