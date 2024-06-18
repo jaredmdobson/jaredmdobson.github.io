@@ -30,7 +30,15 @@ theme: plainwhite
 plugins:
   - jekyll-feed
 plainwhite:
-  search: true
+  name: Jared Dobson
+  tagline: Software Architect and Package Explorer
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: jaredmdobson
+    github: jaredmdobson
+    linkedIn: in/jaredmdobson # format: locale/username
+show_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
