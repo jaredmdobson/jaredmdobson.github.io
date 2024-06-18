@@ -1,1 +1,1 @@
-ls _config.yml | entr -r bundle exec jekyll serve --incremental --livereload
+ls _config.yml | entr -r bundle exec jekyll serve --incremental --livereload --drafts

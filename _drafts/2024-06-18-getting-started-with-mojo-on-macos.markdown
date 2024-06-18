@@ -6,7 +6,9 @@ categories: mojo python data-science ai
 ---
 Running numpy in Mojo is 20,000x faster on macbook!  That is incredible!  Let's get this going on our machine!
 
-Open your terminal app and Install homebrew (if it isn't already installed):
+Open your terminal.app
+
+Install homebrew (if it isn't already installed):
 {% highlight bash %}
 /bin/bash -c "$(curl -fsSL <https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh>)"
 {% endhighlight %}
