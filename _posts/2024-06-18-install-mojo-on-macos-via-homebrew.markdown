@@ -70,7 +70,11 @@ MOJO_PATH=$(modular config mojo.path) \
 
 Now you should be able to run the mojo repl
 {% highlight bash %}
-> mojo repl
+mojo repl
+{% endhighlight %}
+
+And get something like this:
+{% highlight bash %}
 Welcome to Mojo! 🔥
 
 Expressions are delimited by a blank line.
@@ -79,3 +83,6 @@ Type `:quit` to exit the REPL and `:mojo help` for further assistance.
   1>  
 
 {% endhighlight %}
+
+
+Good luck!
