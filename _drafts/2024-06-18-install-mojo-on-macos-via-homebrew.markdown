@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Getting started with Mojo on macOS"
+title:  "Install mojo on macos via homebrew"
 date:   2024-06-18 09:48:17 -0600
 categories: mojo python data-science ai
 ---
-Running numpy in Mojo is 20,000x faster on macbook!  That is incredible!  Let's get this going on our machine!
 
 Open your terminal.app
 
