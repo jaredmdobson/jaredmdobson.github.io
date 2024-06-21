@@ -39,7 +39,6 @@ plainwhite:
   date_format: "%b %-d, %Y"
   disqus_shortname: jaredmdobson
   social_links:
-    twitter: jaredmdobson
     github: jaredmdobson
     linkedIn: in/jaredmdobson # format: locale/username
 show_excerpts: true
