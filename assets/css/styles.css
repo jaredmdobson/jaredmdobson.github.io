@@ -28,3 +28,7 @@ body {
 li {
     line-height: 1.28em;
 }
+
+.posts-labelgroup {
+    border: none;
+}

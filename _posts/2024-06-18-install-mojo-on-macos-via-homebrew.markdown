@@ -2,7 +2,6 @@
 layout: post
 title:  "Install mojo on macos via homebrew"
 date:   2024-06-18 09:48:17 -0600
-categories: mojo python data-science ai
 ---
 Mojo looks pretty exciting so here's how i got it working on my machine, good luck!
 

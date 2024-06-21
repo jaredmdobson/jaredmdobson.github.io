@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Dreaming of a mojo package manager"
-date:   2024-06-18 09:48:17 -0600
-categories: mojo python data-science ai
+date:   2024-06-20 11:48:17 -0600
 ---
 
 I began learning [Mojo](https://www.modular.com/max/mojo) and noticed there wasn't a native default package manager and i began dreaming one up after doing a bit of research:
