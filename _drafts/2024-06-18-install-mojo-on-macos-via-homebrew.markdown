@@ -4,6 +4,7 @@ title:  "Install mojo on macos via homebrew"
 date:   2024-06-18 09:48:17 -0600
 categories: mojo python data-science ai
 ---
+Mojo looks pretty exciting so here's how i got it working on my machine, good luck!
 
 Open your terminal.app
 
@@ -65,4 +66,16 @@ MOJO_PATH=$(modular config mojo.path) \
   && echo 'export MODULAR_HOME="'$HOME'/.modular"' >> ~/.zshrc \
   && echo 'export PATH="'$MOJO_PATH'/bin:$PATH"' >> ~/.zshrc \
   && source ~/.zshrc  
+{% endhighlight %}
+
+Now you should be able to run the mojo repl
+{% highlight bash %}
+> mojo repl
+Welcome to Mojo! 🔥
+
+Expressions are delimited by a blank line.
+Type `:quit` to exit the REPL and `:mojo help` for further assistance.
+
+  1>  
+
 {% endhighlight %}
