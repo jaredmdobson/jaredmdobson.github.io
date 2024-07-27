@@ -23,11 +23,11 @@ What the community is discussing and requesting:
 
 I would use the name Mojic and use a Mojic.toml and Mojic.lock similar to how Rust's cargo does it.  
 
-{% highlight toml %}
+```toml
 [dependencies]
 futures_01 = { package = "futures", version = "0.1.0", type = "src", repo = "https://github.com/rust-lang/futures-rs" }
 futures_03 = { package = "futures", version = "0.3.0" }
-{% endhighlight %}
+```
 
 I would also add in a type of wether to use src or mojopkg, defaults to mojopkg.
 

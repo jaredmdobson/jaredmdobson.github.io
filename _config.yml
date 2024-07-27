@@ -31,8 +31,10 @@ permalink: /blog/:year/:month/:day/:title:output_ext
 kramdown:
   syntax_highlighter_opts:
     disable : true
+highlighter: none    
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 plainwhite:
   name: Jared Dobson
   portfolio_image: assets/images/jared.jpeg

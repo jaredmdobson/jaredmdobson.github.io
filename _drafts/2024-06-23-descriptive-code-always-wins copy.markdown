@@ -8,9 +8,9 @@ I use Siri on my phone to set a reminders for appointments, tasks, chores, worko
 
 When i speak to Siri to set a reminder sometimes she/it mishears what I'm saying and i'll get a reminder like:
 
-{% highlight markdown %}
+```markdown
 * Buy new nike mask
-{% endhighlight %}
+```
 
 The funny thing is i can see the reminder on my phone when i'm talking to Siri and I think, I'll remember what i really want, i remember what it is supposed to say.
 
@@ -18,11 +18,11 @@ Well i never do, i'm almost always confused by these misunderstood reminders and
 
 This reminder of buying a new nike mask really confused me, i never have owned a nike mask and i wasn't sure what it was, at first i thought it could be:
 
-{% highlight markdown %}
+```markdown
 * A gas mask?
 * A special covid gas mask?
 * A new filter for my gas mask?
-{% endhighlight %}
+```
 
 So i search for a nike mask to see if it sparks any ideas:
 
@@ -32,9 +32,9 @@ So i search for a nike mask to see if it sparks any ideas:
 I cannot possibly think of why i would ever want a mask like this, maybe for the cold or for fitness performance?  Maybe it is a high altitude simulator mask? But I already live in high altitude...
 
 Later the next day i realize what it was supposed to say:
-{% highlight markdown %}
+```markdown
 * Buy a new sleep mask
-{% endhighlight %}
+```
 
 But even that is not very clear, is this a sleep mask to rejuvenate my face?  Liquid or Light therapy?
 
@@ -45,27 +45,27 @@ Or maybe it's not even for me?
 
 How about if we become way more descriptive the reminder a bit:
 
-{% highlight markdown %}
+```markdown
 * Buy myself a new sleep mask that covers my eyes at night so i can sleep better, but not too tight on my face or that covers my nose, like the other one i got on amazon.
-{% endhighlight %}
+```
 
 Now this is good overkill, its good because it is descriptive, everyone knows what i mean. But let's slim it down
 
-{% highlight markdown %}
+```markdown
 * Buy myself a new comfortable light blocking eye-covering sleep mask like the last one i bought on amazon.
-{% endhighlight %}
+```
 
 Better still overly wordy and because i have a reference point, my amazon orders to look up the product i can remove more content.
 
-{% highlight markdown %}
+```markdown
 * Buy myself another comfortable sleep mask like the last one i bought on amazon.
-{% endhighlight %}
+```
 
 Boom!  We get a (hopefully) static reference point to my amazon orders and plenty of description, reminding me of the last sleep mask i purchased, loved and lost.
 
 Now let's look at some java code:
 
-{% highlight java %}
+```java
 public class a {
     private UserManager b;
     private PaymentProcessor c;
@@ -85,9 +85,9 @@ public class a {
         System.out.println("Successfully renewed filters and charged user " + g.getName() + " for $" + i);
     }
 }
-{% endhighlight %}
+```
 
-{% highlight java %}
+```java
 import usermanagement.UserManager;
 import payment.PaymentProcessor;
 import filtermanagement.FilterService;
@@ -125,4 +125,4 @@ public class UserSubscriptionService {
         System.out.println("Successfully renewed filters and charged user " + user.getName() + " for $" + totalCharge);
     }
 }
-{% endhighlight %}
+```
