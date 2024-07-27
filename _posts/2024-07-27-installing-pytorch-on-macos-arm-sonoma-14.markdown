@@ -4,7 +4,7 @@ title:  "Installing PyTorch on macos ARM Sonoma 14.5 "
 date:   2024-07-27 10:25:13 -0600
 ---
 
-PyTorch is the most widely used open source library for deep learning and AI.  
+PyTorch is the most widely used open source library for deep learning and AI. Here i show how to install on macos by creating a mamba environment via miniforge3.  
 
 Open your terminal.app
 
@@ -72,3 +72,14 @@ and then exit when done:
 {% highlight python %}
 quit()
 {% endhighlight %}
+
+
+Now if you want to install pytorch lightning you can create a new environment like so:
+
+{% highlight bash %}
+mamba create -n lightning
+mamba activate lightning
+mamba install lightning -c conda-forge
+{% endhighlight %}
+
+Then you can follow the steps to test pytorch lightning [here](https://lightning.ai/docs/pytorch/stable/starter/introduction.html#define-a-lightningmodule)

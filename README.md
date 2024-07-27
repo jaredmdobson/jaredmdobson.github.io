@@ -1,0 +1,1 @@
+My personal blog, visit at [jaredmdobson.com](https://jaredmdobson.com)
